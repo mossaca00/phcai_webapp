@@ -22,7 +22,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="#" class="navbar-brand"> Philippines Historical Sites </a>
+						<a href="#" class="navbar-brand"> PHCAI </a>
 					</div> <!-- /navbar-header -->
 					
 					<div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false">

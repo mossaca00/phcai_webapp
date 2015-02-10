@@ -49,11 +49,7 @@
 	  	</a>
 	</div> <!-- carousel -->
 
-	<!-- phil history -->
-	<?php $this->load->view('home-imports/view_shortphilhistory'); ?>
-
-	<!-- featurettes region -->
-	<?php $this->load->view('home-imports/featurettes'); ?>
+	<?php $this->load->view('home-imports/rcontents'); ?>		
 
 <!-- home content end -->
 
