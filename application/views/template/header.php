@@ -32,6 +32,14 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Destinations <b class="caret"></b> </a>
 								<ul class="dropdown-menu">
+									<li class="dropdown-header">Historical Sites</li>
+									<li><a href="<?php echo base_url('module/regionI'); ?>">Region I</a></li>
+									<li><a href="<?php echo base_url('module/regionII'); ?>">Region II</a></li>
+									<li><a href="#">Region III</a></li>
+									<li><a href="#">Region IV</a></li>
+									<li><a href="#">Region V</a></li>
+									<li class="divider"> </li>
+									<li class="dropdown-header">Churches</li>
 									<li><a href="<?php echo base_url('module/regionI'); ?>">Region I</a></li>
 									<li><a href="#">Region II</a></li>
 									<li><a href="#">Region III</a></li>
@@ -39,18 +47,17 @@
 									<li><a href="#">Region V</a></li>
 								</ul>
 							</li>
-							<li ><a href="#">Contact</a></li>
 							<li ><a href="#">Log In</a></li>
 						</ul>
 					</div> <!-- /navbar-collapse -->
 				</div> <!-- /container -->
-			</nav>
+			</nav> <!-- /navbar -->
 		</div> <!-- /container -->
 	</div> <!-- /navbar-wrapper -->
 
 <!-- header template end -->
 
-<!-- home content start -->
+<!-- scontent start -->
 
 
 	

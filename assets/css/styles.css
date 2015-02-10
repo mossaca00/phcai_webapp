@@ -1,3 +1,7 @@
 .mymargin-top {
 	margin-top: 75px;
 }
+
+.navbar-wrapper .navbar {
+	box-shadow: 0 0 1px #9E9393;
+}
