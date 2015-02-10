@@ -11,10 +11,11 @@ class Module extends CI_Controller {
 	}
 
 	public function regionI() {
-		$this->load->view('destinations/region1/historical/view_region1');
+		$this->load->view('destinations/region1/historical/view_region');
 	}
 
 	public function regionII() {
-		$this->load->view('destinations/region2/historical/view_region2');
+		$this->load->view('destinations/region2/historical/view_region');
 	}
+	
 }
