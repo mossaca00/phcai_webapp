@@ -10,12 +10,36 @@ class Module extends CI_Controller {
 		$this->load->view('view_home');
 	}
 
+	public function lectures() {
+		$this->load->view('view_lecture');
+	}
+
+	public function login() {
+		$this->load->view('system/signin');
+	}
+
 	public function regionI() {
 		$this->load->view('destinations/region1/historical/view_region');
 	}
 
+	public function regionIc() {
+		$this->load->view('destinations/region1/churches/view_churches');
+	}
+
 	public function regionII() {
-		$this->load->view('destinations/region2/historical/view_region');
+		$this->load->view('destinations/region2/historical/view_region2');
 	}
 	
+	public function regionIIc() {
+		$this->load->view('destinations/region2/churches/view_churches');
+	}
+
+	public function regionIII() {
+		$this->load->view('destinations/region3/historical/view_region3');
+	}
+
+	public function regionIIIc() {
+		$this->load->view('destinations/region3/churches/view_churches');
+	}
+
 }
