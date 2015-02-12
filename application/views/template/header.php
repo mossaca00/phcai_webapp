@@ -35,15 +35,15 @@
 									<li><a href="<?php echo base_url('module/regionI'); ?>">Region I</a></li>
 									<li><a href="<?php echo base_url('module/regionII'); ?>">Region II</a></li>
 									<li><a href="<?php echo base_url('module/regionIII'); ?>">Region III</a></li>
-									<li><a href="#">Region IV</a></li>
-									<li><a href="#">Region V</a></li>
+									<li><a href="<?php echo base_url('module/regionIV'); ?>">Region IV</a></li>
+									<li><a href="<?php echo base_url('module/regionV'); ?>">Region V</a></li>
 									<li class="divider"> </li>
 									<li class="dropdown-header">Churches</li>
 									<li><a href="<?php echo base_url('module/regionIc'); ?>">Region I</a></li>
 									<li><a href="<?php echo base_url('module/regionIIc'); ?>">Region II</a></li>
 									<li><a href="<?php echo base_url('module/regionIIIc'); ?>">Region III</a></li>
-									<li><a href="#">Region IV</a></li>
-									<li><a href="#">Region V</a></li>
+									<li><a href="<?php echo base_url('module/regionIVc'); ?>">Region IV</a></li>
+									<li><a href="<?php echo base_url('module/regionVc'); ?>">Region V</a></li>
 								</ul>
 							</li>
 							<li ><a href="<?php echo base_url('module/login'); ?>">Log In</a></li>
