@@ -68,7 +68,7 @@ class Gate extends CI_Controller {
         $this -> form_validation -> set_rules('inputEmail', 'Email', 'required|xss_clean|callback_validate_login');
         $this -> form_validation -> set_rules('inputPassword', 'Password', 'required');
 
-        // If validation is successful
+        //if validation is successful
         if ($this -> form_validation -> run()) {
             $email = $this -> input -> post('inputEmail');
             $pass = $this -> input -> post('inputPassword');
