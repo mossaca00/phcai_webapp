@@ -38,8 +38,6 @@ class Lectures extends CI_Controller {
             'overwrite'     => TRUE
         );
         
-        // load upload library
-        $this->load->library('upload', $this->uploadConf);
         
     }
 
@@ -81,7 +79,8 @@ class Lectures extends CI_Controller {
         // Concatenate term string into the upload path
         $this->uploadConf['upload_path'] .= $term;
         
-        // $this->load->library('upload', $this->uploadConf);
+        // load upload library
+        $this->load->library('upload', $this->uploadConf);
         
         if (! $this->upload->do_upload('lecture')) {
          
