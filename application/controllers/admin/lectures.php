@@ -11,6 +11,7 @@ class Lectures extends CI_Controller {
         // Load lecture_model
         $this->load->model('lecture_model');
         
+        
         // Disable browser caching
         $this -> output -> set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
         $this -> output -> set_header("Pragma: no-cache");
@@ -37,6 +38,9 @@ class Lectures extends CI_Controller {
             'overwrite'     => TRUE
         );
         
+        // load upload library
+        $this->load->library('upload', $this->uploadConf);
+        
     }
 
     public function index() {
@@ -58,6 +62,7 @@ class Lectures extends CI_Controller {
                 'Midterm' => $this->lecture_model->getLecture('Midterm'),
                 'Final'   => $this->lecture_model->getLecture('Final')
             );
+            
 
             // load the lectures view
             $this -> load -> view('system/lectures_view', $this -> data);
@@ -76,11 +81,20 @@ class Lectures extends CI_Controller {
         // Concatenate term string into the upload path
         $this->uploadConf['upload_path'] .= $term;
         
-        $this->load->library('upload', $this->uploadConf);
+        // $this->load->library('upload', $this->uploadConf);
         
         if (! $this->upload->do_upload('lecture')) {
-            $this->data['error'] = $this->upload->display_errors();
-            $this->load->view('system/lectures_view', $this->data);
+         
+           
+           $this->data['error'] = $this->upload->display_errors();
+           
+           $this->data['lectures'] = array(
+                'Prelim'  => $this->lecture_model->getLecture('Prelim'),
+                'Midterm' => $this->lecture_model->getLecture('Midterm'),
+                'Final'   => $this->lecture_model->getLecture('Final')
+           );
+           
+           $this->load->view('system/lectures_view', $this->data);
             
         } else {
             $this->data['uploadInfo'] = $this->upload->data();
