@@ -23,8 +23,7 @@
 		</div>
 	</div> <!-- /jumbotron -->
 
-	<!-- image container
-	================================================= -->
+	<!-- image container ================================================= -->
 	<div class="container marketing">
 
 		<h2>Churches</h2> <br>
