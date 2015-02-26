@@ -12,7 +12,7 @@ class Account_model extends CI_Model {
      }
     
     /**
-     * Validates admin password.
+     * Validates admin password
      * Returns TRUE if password argument matches existing
      * admin password
      * @param1  str  = password input
@@ -32,7 +32,7 @@ class Account_model extends CI_Model {
     
     /**
      * Updates admin password
-     * 
+     * @param newPassword => the new password 
      */
      public function updatePassword ($newPassword){
         

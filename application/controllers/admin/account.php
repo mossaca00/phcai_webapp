@@ -25,9 +25,8 @@ class Account extends CI_Controller {
 
     // Displays form for editing account
     public function home() {
-        
+
         if ($this -> session -> userdata('is_logged_in') && $this -> session -> userdata('role') == 'Admin') {
-            
             $this -> load -> view('system/account_view', $this -> data);
         } else {
             redirect('gate/');
@@ -38,7 +37,7 @@ class Account extends CI_Controller {
      *  Updates account entered in the update account form
      */
     public function update() {
-         $this -> form_validation -> set_rules('inputPassword', 'Old Password', 'xss_clean|callback_validate_password');
+        $this -> form_validation -> set_rules('inputPassword', 'Old Password', 'xss_clean|callback_validate_password');
         $this -> form_validation -> set_rules('inputNewPassword', 'New Password', 'xss_clean');
 
         if ($this -> form_validation -> run()) {
@@ -54,7 +53,7 @@ class Account extends CI_Controller {
      */
     public function validate_password() {
 
-         $password = $this -> input -> post('inputPassword');
+        $password = $this -> input -> post('inputPassword');
 
         if ($this -> account_model -> validate_password($password)) {
             return TRUE;

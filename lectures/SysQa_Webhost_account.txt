@@ -1,0 +1,4 @@
+Domain/Developers URL: http://www.sysqa1.com/
+cPanel: https://rs19abstractdns.com:2087/cpsess684617618/xfercpanel/ueitgroup1
+U: ueitgroup1
+P: uesysqa1g12014$$

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 11, 2015 at 02:55 AM
+-- Generation Time: Feb 23, 2015 at 02:05 AM
 -- Server version: 5.5.36
 -- PHP Version: 5.4.27
 
@@ -64,8 +64,7 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('646af5cf1ffb6fc0aa1aafdd929dd42c', '127.0.0.1', 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36', 1423551272, 'a:4:{s:9:"user_data";s:0:"";s:5:"email";s:15:"admin@gmail.com";s:4:"role";s:5:"Admin";s:12:"is_logged_in";b:1;}'),
-('deda07ada8b3f525b73b628787f46829', '127.0.0.1', 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.95 Safari/537.36', 1423545505, '');
+('ffc0021fce6b0d86ca0bd71ebfe28571', '127.0.0.1', 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36', 1424652606, 'a:4:{s:9:"user_data";s:0:"";s:5:"email";s:15:"admin@gmail.com";s:4:"role";s:5:"Admin";s:12:"is_logged_in";b:1;}');
 
 -- --------------------------------------------------------
 
