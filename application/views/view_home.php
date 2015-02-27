@@ -49,6 +49,9 @@
 	  	</a>
 	</div> <!-- carousel -->
 
+	<!-- region content -->
+	<?php $this->load->view('home-imports/rcontents'); ?>		
+
 <!-- home content end -->
 
 <?php $this->load->view('template/footer'); ?> <!-- footer -->
