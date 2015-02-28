@@ -40,6 +40,10 @@
 
 $route['default_controller'] = "module";
 $route['module/(:any)'] = "module/$1";
+
+// Student module
+// $route['student/lectures'] = "student/lectures/home";
+
 $route['404_override'] = '';
 
 

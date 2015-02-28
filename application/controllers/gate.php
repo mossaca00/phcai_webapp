@@ -41,7 +41,7 @@ class Gate extends CI_Controller {
     public function logout() {
         if ($this -> session -> userdata('is_logged_in')) {
             $this -> session -> sess_destroy();
-            echo 'You are now logged out!';
+            echo 'You are now logged out! Click <a href="' . base_url('gate') . '"> here </a> to exit.';
         } else {
             redirect('gate');
         }
@@ -71,7 +71,7 @@ class Gate extends CI_Controller {
         //if validation is successful
         if ($this -> form_validation -> run()) {
             $email = $this -> input -> post('inputEmail');
-            $pass = $this -> input -> post('inputPassword');
+            $pass  = $this -> input -> post('inputPassword');
 
             $data = array(
                 'email' => $email,

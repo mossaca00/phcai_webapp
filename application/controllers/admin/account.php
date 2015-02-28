@@ -16,7 +16,7 @@ class Account extends CI_Controller {
         $this -> output -> set_header("Pragma: no-cache");
 
         // Default view variables
-        $this -> data = array('title' => 'Edit', 'heading' => 'Edit Password', 'sub' => 'edit password to protect against anything', 'user' => $this -> session -> userdata('role'), 'links' => array('Manage Lectures' => base_url('admin/lectures'), 'Manage Students' => base_url('admin/students'), 'Update Account' => base_url('admin/account')));
+        $this -> data = array('title' => 'Edit', 'heading' => 'Edit Admin Password', 'sub' => '', 'user' => $this -> session -> userdata('role'), 'links' => array('Manage Lectures' => base_url('admin/lectures'), 'Manage Students' => base_url('admin/students'), 'Update Account' => base_url('admin/account')));
     }
 
     public function index() {

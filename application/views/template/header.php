@@ -46,7 +46,8 @@
 									<li><a href="<?php echo base_url('module/regionVc'); ?>">Region V</a></li>
 								</ul>
 							</li>
-							<li ><a href="<?php echo base_url('module/login'); ?>">Log In</a></li>
+							<li ><a href="<?php echo base_url('module/login'); ?>">Admin Login</a></li>
+                                                        <li><a href="<?php echo base_url('student_gate');?>"> Student Login</a> </li>
 						</ul>
 					</div> <!-- /navbar-collapse -->
 				</div> <!-- /container -->

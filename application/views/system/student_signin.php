@@ -26,12 +26,12 @@
 
     <div class="container">
       <!-- <form class="form-signin"> -->
-      <?php echo form_open('gate/login_validation', array('class' => 'form-signin')); ?>
+      <?php echo form_open('student_gate/login_validation', array('class' => 'form-signin')); ?>
         <!-- output validation errors -->
         <p class="alert-danger"><?php echo validation_errors(); ?></p>
-        <h2 class="form-signin-heading">Admin Login</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <h2 class="form-signin-heading">Student Login</h2>
+        <label for="inputEmail" class="sr-only">Student number</label>
+        <input type="number" id="inputEmail" name="inputStudNumber" class="form-control" min="0" placeholder="Student number" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
         

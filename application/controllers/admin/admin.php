@@ -13,7 +13,7 @@ class Admin extends CI_Controller {
         $this -> output -> set_header("Pragma: no-cache");
 
         // Default view variables
-        $this -> data = array('title' => 'Admin Panel', 'heading' => 'Welcome, Admin', 'sub' => 'This is the admin panel', 'user' => $this -> session -> userdata('role'), 'links' => array('Manage Lectures' => base_url('admin/lectures'), 'Manage Students' => base_url('admin/students'), 'Update Account' => base_url('admin/account')));
+        $this -> data = array('title' => 'Admin Panel', 'heading' => 'Welcome, Admin', 'sub' => 'This is the admin panel, you manage lectures, students, and edit your password here. ', 'user' => $this -> session -> userdata('role'), 'links' => array('Manage Lectures' => base_url('admin/lectures'), 'Manage Students' => base_url('admin/students'), 'Update Account' => base_url('admin/account')));
     }
 
     public function index() {
