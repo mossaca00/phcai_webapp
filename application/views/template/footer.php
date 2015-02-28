@@ -33,6 +33,7 @@
 	
 	<script src="<?php echo base_url().'assets/js/jquery.js'; ?>"></script>
 	<script src="<?php echo base_url().'assets/js/bootstrap.js'; ?>"></script>
+	<script src="<?php echo base_url().'assets/js/myjquery.js'; ?>"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.carousel').carousel({interval: 3000});

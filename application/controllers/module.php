@@ -45,4 +45,46 @@ class Module extends CI_Controller {
 	public function regionVc() {
 		$this->load->view('destinations/region5/churches/view_churches');
 	}
+	public function regionVI() {
+		$this->load->view('destinations/region6/historical/view_region6');
+	}
+	public function regionVIc() {
+		$this->load->view('destinations/region6/churches/view_churches');
+	}
+	public function regionVII() {
+		$this->load->view('destinations/region7/historical/view_region7');
+	}
+	public function regionVIIc() {
+		$this->load->view('destinations/region7/churches/view_churches');
+	}
+	public function regionVIII() {
+		$this->load->view('destinations/region8/historical/view_region8');
+	}
+	public function regionVIIIc() {
+		$this->load->view('destinations/region8/churches/view_churches');
+	}
+	public function regionIX() {
+		$this->load->view('destinations/region9/historical/view_region9');
+	}
+	public function regionIXc() {
+		$this->load->view('destinations/region9/churches/view_churches');
+	}
+	public function regionX() {
+		$this->load->view('destinations/region10/historical/view_region10');
+	}
+	public function regionXc() {
+		$this->load->view('destinations/region10/churches/view_churches');
+	}
+	public function regionXI() {
+		$this->load->view('destinations/region11/historical/view_region11');
+	}
+	public function regionXIc() {
+		$this->load->view('destinations/region11/churches/view_churches');
+	}
+	public function regionXII() {
+		$this->load->view('destinations/region12/historical/view_region12');
+	}
+	public function regionXIIc() {
+		$this->load->view('destinations/region12/churches/view_churches');
+	}
 }
