@@ -33,7 +33,7 @@
 								<ul class="dropdown-menu">
 									<li>
 									<li class="dropdown-header">Historical Sites</li>
-																		
+									
 									<li><a href="<?php echo base_url('module/regionI'); ?>">Region I</a></li>
 									<li><a href="<?php echo base_url('module/regionII'); ?>">Region II</a></li>
 									<li><a href="<?php echo base_url('module/regionIII'); ?>">Region III</a></li>
@@ -46,10 +46,8 @@
 									<li><a href="<?php echo base_url('module/regionX'); ?>">Region X</a></li>
 									<li><a href="<?php echo base_url('module/regionXI'); ?>">Region XI</a></li>
 									<li><a href="<?php echo base_url('module/regionXII'); ?>">Region XII</a></li>									
-									
 									<li class="divider"> </li>
 									<li class="dropdown-header">Churches</li>
-																		
 									<li><a href="<?php echo base_url('module/regionIc'); ?>">Region I</a></li>
 									<li><a href="<?php echo base_url('module/regionIIc'); ?>">Region II</a></li>
 									<li><a href="<?php echo base_url('module/regionIIIc'); ?>">Region III</a></li>
@@ -61,8 +59,7 @@
 									<li><a href="<?php echo base_url('module/regionIXc'); ?>">Region IX</a></li>
 									<li><a href="<?php echo base_url('module/regionXc'); ?>">Region X</a></li>
 									<li><a href="<?php echo base_url('module/regionXIc'); ?>">Region XI</a></li>
-									<li><a href="<?php echo base_url('module/regionXIIc'); ?>">Region XII</a></li>
-									
+									<li><a href="<?php echo base_url('module/regionXIIc'); ?>">Region XII</a></li>									
 									</li>
 								</ul>
 							</li>
