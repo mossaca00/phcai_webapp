@@ -31,9 +31,9 @@
                 <h2 class="page-header"> Students List </h2>
                 <table class="table table-responsive">
                     <tr>
+                        <th> First name </th>
+                        <th> Last name  </th>
                         <th> Student number </th>
-                        <th> First name  </th>
-                        <th> Last name</th>
                         <th colspan="2"> </th>
                     </tr>
                     <?php if ($students !== FALSE) { ?>

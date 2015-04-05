@@ -12,3 +12,8 @@ and open the template in the editor.
     margin-top:75px;
 }
 
+#success, #error {
+	border-radius: 7px;
+	padding: 2% 4%;
+}
+

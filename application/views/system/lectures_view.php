@@ -1,4 +1,8 @@
-<?php $this -> load -> view('system/layout/header'); ?>
+<?php $this->load->view('system/layout/header'); ?>
+
+
+
+<?php $this->load->view('system/layout/footer'); ?>
 
 <div id="content" class="container">
     
@@ -89,3 +93,4 @@
 </div> <!-- END CONTENT -->
 
 <?php $this -> load -> view('system/layout/footer'); ?>
+>>>>>>> 49c9adb29edb376cd93d3cd915ddf74a2e941e1c

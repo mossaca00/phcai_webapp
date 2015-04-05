@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="<?php echo base_url().'assets/css/bootstrap.css'; ?>">
 	<link rel="stylesheet" href="<?php echo base_url().'assets/css/styles.css'; ?>">
 	<link rel="stylesheet" href="<?php echo base_url().'assets/css/carousel.css'; ?>">
+	<link rel="stylesheet" href="<?php echo base_url().'assets/css/system.css'; ?>"/>
 </head>
 <body>
 
@@ -31,12 +32,21 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Destinations <b class="caret"></b> </a>
 								<ul class="dropdown-menu">
+									<li>
 									<li class="dropdown-header">Historical Sites</li>
+									
 									<li><a href="<?php echo base_url('module/regionI'); ?>">Region I</a></li>
 									<li><a href="<?php echo base_url('module/regionII'); ?>">Region II</a></li>
 									<li><a href="<?php echo base_url('module/regionIII'); ?>">Region III</a></li>
 									<li><a href="<?php echo base_url('module/regionIV'); ?>">Region IV</a></li>
 									<li><a href="<?php echo base_url('module/regionV'); ?>">Region V</a></li>
+									<li><a href="<?php echo base_url('module/regionVI'); ?>">Region VI</a></li>
+									<li><a href="<?php echo base_url('module/regionVII'); ?>">Region VII</a></li>
+									<li><a href="<?php echo base_url('module/regionVIII'); ?>">Region VIII</a></li>
+									<li><a href="<?php echo base_url('module/regionIX'); ?>">Region IX</a></li>
+									<li><a href="<?php echo base_url('module/regionX'); ?>">Region X</a></li>
+									<li><a href="<?php echo base_url('module/regionXI'); ?>">Region XI</a></li>
+									<li><a href="<?php echo base_url('module/regionXII'); ?>">Region XII</a></li>									
 									<li class="divider"> </li>
 									<li class="dropdown-header">Churches</li>
 									<li><a href="<?php echo base_url('module/regionIc'); ?>">Region I</a></li>
@@ -44,6 +54,14 @@
 									<li><a href="<?php echo base_url('module/regionIIIc'); ?>">Region III</a></li>
 									<li><a href="<?php echo base_url('module/regionIVc'); ?>">Region IV</a></li>
 									<li><a href="<?php echo base_url('module/regionVc'); ?>">Region V</a></li>
+									<li><a href="<?php echo base_url('module/regionVIc'); ?>">Region VI</a></li>
+									<li><a href="<?php echo base_url('module/regionVIIc'); ?>">Region VII</a></li>
+									<li><a href="<?php echo base_url('module/regionVIIIc'); ?>">Region VIII</a></li>
+									<li><a href="<?php echo base_url('module/regionIXc'); ?>">Region IX</a></li>
+									<li><a href="<?php echo base_url('module/regionXc'); ?>">Region X</a></li>
+									<li><a href="<?php echo base_url('module/regionXIc'); ?>">Region XI</a></li>
+									<li><a href="<?php echo base_url('module/regionXIIc'); ?>">Region XII</a></li>									
+									</li>
 								</ul>
 							</li>
 							<li ><a href="<?php echo base_url('module/login'); ?>">Admin Login</a></li>

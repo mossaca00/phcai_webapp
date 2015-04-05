@@ -36,6 +36,7 @@ class Students extends CI_Controller {
     
     
     // Displays form for editing account
+    // and students list
     public function home () {
         if ($this->session->userdata('is_logged_in') && $this->session->userdata('role') == 'Admin') {
             
@@ -47,17 +48,28 @@ class Students extends CI_Controller {
         }
     }
     
+	/**
+	 * Adds a new student
+	 */
     public function addStudent () {
         $student = array(
             'fname'   => $this -> input -> post('fname'),
             'lname'   => $this -> input -> post('lname'),
             'stud_num' => $this -> input -> post('studNum')
         );
-        $this -> student_model -> addStudent ($student);
-        $this -> data['action'] = 'added new student';
-        $this -> data['back']   = base_url('admin/students');
-        
-        $this -> load -> view ('system/other/success', $this->data);
+		
+        $insertion = $this -> student_model -> addStudent ($student);
+		
+		if ($insertion) {
+			$this -> data['action'] = 'added new student';
+	        $this -> data['back']   = base_url('admin/students');
+	        $this -> load -> view ('system/other/success', $this->data);
+		} else {
+			$this->data['errmsg'] = 'Student number already exists!';
+			$this->data['back'] = base_url('admin/students');
+			$this -> load -> view ('system/other/error', $this->data);
+		}
+		
     }
     
     

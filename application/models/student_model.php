@@ -21,9 +21,19 @@ class student_model extends CI_Model {
     /**
      * Adds a new Student to DB
      * @param array $studentData - array containing student name & stud number
+	 * @return bool TRUE - if data successfully inserted with no dupplicate
      */
     public function addStudent ($studentData) {
-        $this -> db -> insert('student', $studentData);
+		
+		$exists = $this -> db -> get_where('student', array('stud_num' => $studentData['stud_num'])) -> num_rows();
+        
+		
+		if (!$exists) { 
+        	$this -> db -> insert('student', $studentData);
+			return TRUE;
+		} else {
+			return FALSE;
+		}
     }
     
     /**

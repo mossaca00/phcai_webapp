@@ -33,7 +33,6 @@ class Admin extends CI_Controller {
         } else {
             redirect('gate/');
         }
-
     }
 
     // Shows edit account controller
